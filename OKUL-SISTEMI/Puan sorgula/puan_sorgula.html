@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block title %} puan sorgulaa {%endblock%}
+
+{%block content%}
+
+<html>
+<head>
+    <title>Öğrenci ID Sorgula</title>
+</head>
+<body>
+    <h1>Öğrenci ID Sorgula</h1>
+    <form method="POST" action="">
+        <label for="ogrenci_id">Öğrenci ID:</label>
+        <input type="text" name="ogrenci_id" id="ogrenci_id" required>
+        <button type="submit">Bilgileri Getir</button>
+    </form>
+</body>
+</html>
+{%endblock%}

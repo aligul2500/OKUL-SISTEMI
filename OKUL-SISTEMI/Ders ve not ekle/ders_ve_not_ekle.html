@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+
+{% block title %} öğrencinin ders ve notları  {%endblock%}
+
+{%block content%}
+<section style="background-color:yellow ;height: 100vh;">
+    <div class="container" style="height: 100%;">
+       <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+         <form action="" method="POST">
+            <p>Bu bir ders ve not girişi sayfasıdır ders İD leri :
+                MATEMATİK İD = 1 , TURKCE İD = 2 , FİZİK = 3 , KİMYA = 4 , COĞRAFYA = 5 , RESİM = 6 ,TARİH = 7
+            </p>
+            <label for="ogrenci_id">öğrenci id</label>
+           <input type="number" name="ogrenci_id" required><br>
+           <label for="ders_id">ders id</label>
+           <input type="number" name="ders_id" required><br>
+           <label for="not_id">notid</label>
+           <input type="number" name="not_id" required><br>
+           <label for="puan">puannn</label>
+           <input type="number" name="puan" required><br>
+           <button type="submit"> ders ve notu ekle</button>
+           <a class="btn-primary mx-3"href="/">Çıkış yap</a>
+         </form>
+       </div>
+    </div>
+</section>
+{%endblock%}

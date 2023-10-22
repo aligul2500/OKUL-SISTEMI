@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block title %} öğrenci bilgi {%endblock%}
+
+{%block content%}
+<html>
+<head>
+    <title>Öğrenci Bilgisi</title>
+</head>
+<body>
+    <h1>Öğrenci Bilgisi</h1>
+    <p>Öğrenci ID: {{ ogrenci[0] }}</p>
+    <p>Ad: {{ ogrenci[1] }}</p>
+    <p>Soyad: {{ ogrenci[2] }}</p>
+    <p>Doğum Tarihi: {{ ogrenci[3] }}</p>
+    
+</body>
+</html>
+
+{%endblock%}

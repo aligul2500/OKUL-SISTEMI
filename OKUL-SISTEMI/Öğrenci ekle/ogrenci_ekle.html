@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+
+{% block title %} öğrenci ekle {%endblock%}
+
+{%block content%}
+<section style="background-color:yellow ;height: 100vh;">
+    <div class="container" style="height: 100%;">
+       <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+         <form action="" method="POST">
+            <label style="font-size: 2rem;" for="ogrenci_id">öğrenci numarası</label><br>
+            <input style="font-size: 2rem;"type="number" name="ogrenci_id"><br>
+            <label style="font-size: 2rem;"for="ad">ad</label><br>
+            <input style="font-size: 2rem;"type="text" name="ad"><br>
+            <label style="font-size: 2rem;"for="soyad">soyad</label><br>
+            <input style="font-size: 2rem;"type="text" name="soyad"><br>
+            <label style="font-size: 2rem;"for="dogum_tarihi">doğum tarihi</label><br>
+            <input type="date" name="dogum_tarihi"><br>
+             <button type="submit"> kaydol</button>
+         </form>
+       </div>
+    </div>
+</section>
+{%endblock%}

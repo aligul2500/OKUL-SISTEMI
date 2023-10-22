@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{% block title %}  Anasayfa{% endblock %}
+
+{%  block content %}
+<div class="container pt-5">
+    <div class="d-flex"  >
+        
+        <h1> ÖĞRENCİ SİSTEMİNE HOŞGELDİNİZ</h1>
+        <a  class="btn-primary mx-3" href="/öğrenci_ekle">Öğrenci ekle</a>
+        
+        
+        <a class="btn-primary mx-3"href="/tüm_öğrenciler">Tüm öğrenciler</a>
+        <a class="btn-primary mx-3"href="/öğrencinin_ders_ve_notları">Öğrencinin ders ve notları</a>
+        <a class="btn-primary mx-3"href="/puan_sorgula">puan sorgula</a>
+        <a class="btn-primary mx-3"href="/ogrenci_id_sorgula">Öğrenci id</a>
+        <a class="btn-primary mx-3"href="/">Çıkış yap</a>
+          
+
+    
+    </div>
+</div>
+
+
+
+
+{% endblock %}

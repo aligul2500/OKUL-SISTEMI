@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %} Ders Güncelleme {% endblock %}
+
+{% block content %}
+<section style="background-color: yellow; height: 100vh;">
+    <div class="container" style="height: 100%;">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+            <form action="" method="POST">
+                <label for="not_id">Not ID</label>
+                <input type="number" name="not_id" required><br>
+                <label for="ogrenci_id">Öğrenci ID</label>
+                <input type="number" name="ogrenci_id" required><br>
+                <label for="ders_id">Ders ID</label>
+                <input type="number" name="ders_id" required><br>
+                <label for="yeni_puan">Yeni Puan</label>
+                <input type="number" name="yeni_puan" required><br>
+                <button type="submit">Dersi Güncelle</button>
+                <a class="btn-primary mx-3" href="/">Çıkış yap</a>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

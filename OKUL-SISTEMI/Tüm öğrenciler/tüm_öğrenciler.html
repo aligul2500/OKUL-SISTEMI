@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %} Tüm Öğrenciler {% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tüm Öğrenciler</title>
+</head>
+<body>
+    <h1>Tüm Öğrenciler</h1>
+    <table border ="1">
+        <tr>
+            <th>Öğrenci ID</th>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Doğum Tarihi</th>
+        </tr>
+        {% for öğrenci in öğrenciler %}
+            <tr>
+                <td>{{ öğrenci[0] }}</td>
+                <td>{{ öğrenci[1] }}</td>
+                <td>{{ öğrenci[2] }}</td>
+                <td>{{ öğrenci[3] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
+
+{% endblock %}
